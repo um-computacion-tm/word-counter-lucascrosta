@@ -10,9 +10,9 @@ def contador_de_palabras(frase):
 
     for pal in listapalabras:
         if pal in dicc:
-            dicc[pal] += 1
+            dicc[pal.lower()] += 1
         else:
-            dicc[pal] = 1
+            dicc[pal.lower()] = 1
     
     return dicc
     
